@@ -28,4 +28,36 @@ const BuySellStocks = (arr) => {
     //console.log(highestPrice)
 }
 
-console.log(BuySellStocks([3150, 100, 3, 2, 5, 4]))
+console.log(BuySellStocks([7, 1, 5, 3, 6, 4]))
+
+//SOLUTION ABOVE DOES NOT WORK FOR EVRY CASE. SEE BELOW FOR FULL SOLUTION
+
+const maxProfit = (arr) => {
+    //Original price
+    let buyPrice = arr[0]
+    //Keep track of Profit
+    let profit = 0
+
+    //Because we are checking by pairs we dont want to reach the end of the itreation and have no pair. So we say arr.length -1 as the for loop parameter
+    //Go through arr and see if there is profit
+    for (let i = 0; i < arr.length - 1; i++) {
+        let tempProfit = arr[i + 1] - arr[i]
+        //if there is no profit continue
+        if (tempProfit > 0) {
+            //if there is profit 
+            //Check if current purchase price is < than old one
+            //replace starting price
+            if (arr[i] < buyPrice) {
+                buyPrice = arr[i]
+            }
+            //track profit
+            //new profit > profit track it
+            if (arr[i + 1] - buyPrice > profit) {
+                profit = arr[i + 1] - buyPrice
+            }
+        }
+    }
+    return profit
+}
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4]))
