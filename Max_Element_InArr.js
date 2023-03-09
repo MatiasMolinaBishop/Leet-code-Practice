@@ -66,7 +66,9 @@ console.log(`The string that repeats the most is ${maxEntry} and it exists ${max
   //console.log(`${property}: ${object[property]}`);
 //}
 
-// Expected output:
+// Expected output:s
 // "a: 1"
 // "b: 2"
 // "c: 3"
+
+//The for in method is used to iterate through objects. As seen above we can then conditnolly arrange this data to get whatver results we want
