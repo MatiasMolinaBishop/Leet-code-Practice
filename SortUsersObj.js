@@ -81,12 +81,17 @@ const topStudents = () => {
     return notFail
 }
 
+//console.log(topStudents(students))
 
 
+//FILTER BY A SPCIFIC NAME
 
+const filterName = (userName, arr) => {
+    const searchedUser = arr.filter((element) => {
+        return element.name === userName
+    })
 
+    return searchedUser
+}
 
-
-console.log(topStudents(students))
-
-
+console.log(filterName('Carolina Perez', students))
