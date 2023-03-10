@@ -2,7 +2,7 @@
 // function someCallbackFunction() {
 //     console.log('Hey there, Ironhackers!');
 // }
-// const timeoutId = setTimeout(someCallbackFunction, 1000);
+// data[0].details
 
 // const someCallbackFunctionTwo = () => {
 //     console.log('THIS TOOK 3 SECONDS')
