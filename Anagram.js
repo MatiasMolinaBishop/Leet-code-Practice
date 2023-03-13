@@ -8,11 +8,7 @@ const isAnagram = (test, original) => {
     //When using the built in sort() in java script CAPITALS are sorted different thats why we toUpperCase()
     let testUp = test.toUpperCase()
     let originalUp = original.toUpperCase()
-
-    console.log([...testUp].join(''))
-    console.log()
-
-
+    //console.log([...testUp].join(''))
     return [...testUp].sort().join('') === [...originalUp].sort().join('')
     //Sort sorts elememts of an ARRAY on place. Therefore we use teh spread operator to make this an array and be able to sort it
     //REMEMEBR - we must join('') the arryas back so that we can compare strungs. Arrays and Objects even tho the values might be the same
