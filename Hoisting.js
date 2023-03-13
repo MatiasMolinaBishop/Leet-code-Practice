@@ -1,24 +1,21 @@
 //What will be consoled log here?
 
 //Question 1:
-
 console.log(foo)
 foo = 1
 
 //error as foo is neve initialized as a variable
-
 //Question 2:
 
 console.log(foo)
 var food = 1
 
-//You will get undefined as variables are hoisted to the top of code. In this case foo is dclared so it goes to the top. However, it would be undefined
+//You will get undefined as variables are hoisted to the top of code. In this case foo is declared so it goes to the top. However, it would be undefined
 //As the value is given to it after we console log it
 
 //Question 3
 foo = 3
 var foo
-
 console.log(foo)
 
 //This would log 3 aw the var is hoisted to the top

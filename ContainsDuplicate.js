@@ -34,7 +34,7 @@ const ContainsDuplicates = (arr) => {
 
 console.log(ContainsDuplicates([2, 4, 6, 7, 9, 5, 1, 4]))
 
-//ANOTHERWAY OF CREATING THIS FUNCTION MORE EFFICIENT
+//ANOTHERWAY OF CREATING THIS FUNCTION
 
 const ContainsDuplicatesEfficient = (arr) => {
     arr.sort()

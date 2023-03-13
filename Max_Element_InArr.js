@@ -4,7 +4,7 @@ const strings = ["hi", "hi", "bye", "test", "NeverBackDwon"]
 //create an empty object where we will store the strings as keys and give them the nymber of times they appear on the array as values
 let commonStrings = {}
 
-console.log(commonStrings[1])
+//console.log(commonStrings[1])
 //the above output returns undefined. That is because initially the object is empty
 
 //forEach is a built in array method tha iterates through the array. Similar to map it takes as argument a function which is called upon each element of the array. 
@@ -51,7 +51,7 @@ for (property in commonStrings) {
     //so its the same as saying 1 > 0 - intially 0
     if (commonStrings[property] > maxValue) {
         //If the value of a given key on the object is > the maxValue then we change that max value to whatver the value of that element is
-        //and we make maxEntry = to the ket which corresponds to that highest value
+        //and we make maxEntry = to the key which corresponds to that highest value
         maxValue = commonStrings[property];
         maxEntry = property;
     }
@@ -61,7 +61,6 @@ console.log(`The string that repeats the most is ${maxEntry} and it exists ${max
 
 
 //const object = { a: 1, b: 2, c: 3 };
-
 //for (const property in object) {
   //console.log(`${property}: ${object[property]}`);
 //}

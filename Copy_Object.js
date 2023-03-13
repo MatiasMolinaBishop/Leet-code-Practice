@@ -15,9 +15,19 @@ book1.publishers[0] = {
     companyName: 'Super Cool Company', // => change the deep property of the book1
 };
 book1.author = 'William Shakespeare'; // change the property of the book1
-console.log(book1);
-console.log(book5);
+//console.log(book1);
+//console.log(book5);
 
+const obj1 = {
+    book: 'Harry Potter',
+    pages:560
+}
+
+let obj2 = {...obj1}
+let obj3 = obj1
+
+console.log(obj1 === obj2)
+console.log(obj1 === obj3)
 
 //WE CAN ALSO USE THIS METHOD TO DEEP CLONE ARRAYS
 // multidimensional array

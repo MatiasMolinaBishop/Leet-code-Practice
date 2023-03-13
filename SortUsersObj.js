@@ -72,7 +72,7 @@ const topStudents = () => {
         }
     })
 
-    //.sort() id a javascript built in method for arrays. 
+    //.sort() is a javascript built in method for arrays. 
     //In this case if a < b we return -1 otherwise return 1 (ascending oerder) meaning from low to top
     // a < b we return 1 if not -1 (descending) meaning from top to bottom
 

@@ -1,5 +1,4 @@
 //Get an array with the names of all sutudents and change capital letters to lowercase and viseversa
-
 const students = [
     {
         name: 'Tony Parker',

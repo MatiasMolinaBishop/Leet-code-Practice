@@ -23,5 +23,4 @@ const name = 'Bob';
 // (toFixed is a method for numbers)
 name.toFixed();
 // Uncaught TypeError: name.toFixed is not a function
-
 console.log('test')

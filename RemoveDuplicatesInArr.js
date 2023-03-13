@@ -3,8 +3,8 @@
 const removeDuplicate = (arr) => {
 
     //I want to be able to somehow keep track of each individual element on the arr and count how many times it exists
-    //We can do this creatingan object woth the individula elements as keys and the number of times they apear on the arr as values
-    //then i wamt to return an arr with only the keys of the object as it woudl contain unique vlues therefore getting rif of all duplicates
+    //We can do this creatingan object with the individula elements as keys and the number of times they apear on the arr as values
+    //then I want to return an arr with only the keys of the object as it woudl contain unique vlues therefore getting rid of all duplicates
 
     let obj = {}
 

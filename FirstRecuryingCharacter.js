@@ -1,6 +1,6 @@
 //Create a function that accpets an array as argument and retunrs the forst element of that array
 //that repeats its self
-//[2,4,7,2,4,6,9,0,3,5] =======> output 2
+//[2,4,7,2,4,6,9,0,3,5] =======> output 2 !
 
 const firstDuplicate = (arr) => {
 

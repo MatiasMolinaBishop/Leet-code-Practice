@@ -1,5 +1,6 @@
 //given a specific end point fetch datra from an API
 //Write a function that returns the details of all rocket flights  / missions
+//When working wth react we can use axios and there would be no need to .json() the data coming from the API
 
 let API = 'https://api.spacexdata.com/v4/launches'
 

@@ -15,7 +15,6 @@ const reverseWords = (str) => {
     console.log(str.split('').reverse().join('').split(' ').reverse().join(' '))
     console.log(str.split(' ').reverse().join(' '))
 
-
     return str.split('').reverse().join('')
 
 }

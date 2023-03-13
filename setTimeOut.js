@@ -38,9 +38,10 @@ const timer = setInterval(() => {
 
     if (count === 0) {
         console.log('Pop!')
+        //we must call the clear interval() to stop the setInterval function
         clearInterval(timer)
     }
-
+    //1000 milisecinds which = 1 second
 }, 1000)
 
 // While setTimeout() executes the function just once,

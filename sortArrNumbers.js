@@ -50,7 +50,6 @@ const sortByLastName = (arr) => {
         let lastName2 = book2.authorName.split(' ')[1]
 
         return lastName1 > lastName2 ? 1 : -1
-
     })
 
 }

@@ -17,6 +17,9 @@
 
 //NOTE - arrys will only contain numbers
 const mergeSort = (arr1, arr2) => {
+    //We use the spread operator to concatenat the arrays. then Once its all onw array we use the builtin arr method .aort()
+    //They way sort works is it takes two parameters representing two elements on the arr and it comprares them it goes on and on until it is all sorted
+    //we must specify on the return b - a or whatver
 
     let answer = [...arr2, ...arr1].sort((a, b) => b - a)
     return console.log(answer)

@@ -28,12 +28,12 @@ function anagramCounter(wordsArray) {
     //let counter = for
     //At this point wordsObject will be an object containing keys for the possible anagrams soretd and the number of times those words repaat as keys
     console.log(wordsObject)
-    //We want to save the keys that contain the number of times the words reaptthemselves as an arr so that we can count those and reventually return that value
+    //We want to save the keys that contain the number of times the words reaptthemselves as an arr so that we can count those and eventually return that value
     //Object.values(wordsObject) method returns an arr with the values of such object called upon
     let valuesArr = Object.values(wordsObject)
     console.log(valuesArr)
     //We intiate a counter to keep track of the number of anagrams
-    //We iterate throgh this mew arr and we change the values of the counter accordingly to certain conditions
+    //We iterate throgh this new arr and we change the values of the counter accordingly to certain conditions
 
     let counter = 0
 
