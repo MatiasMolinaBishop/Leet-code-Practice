@@ -51,3 +51,45 @@ for (let i = 0; i < jonasArray.length; i++) {
 }
 
 console.log(newArr)
+
+const years = [1991, 2007, 1969, 2020]
+
+let ages = []
+let today = 2037
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(today - years[i])
+}
+
+console.log(ages)
+
+//CONTINUE - to exit the current itertion of the loop and move to the next one
+//BREAK - Terminate the whole loop
+
+//Imagine we just want to push strings to the arr
+
+let newArr2 = []
+
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] != 'string') {
+        continue
+    }
+    newArr2.push(typeof jonasArray[i])
+}
+
+console.log(newArr2)
+
+//BREAK IF CERTAIM NUMBER IS FOUND
+//NOTE - The condition that makes the code break is not added to the new arr. Because, the the for loop is terminated before we can even push
+
+let newArr3 = []
+
+for (let i = 0; i < jonasArray.length; i++) {
+    if (jonasArray[i] === 46) {
+        break
+    }
+    newArr3.push(jonasArray[i])
+}
+
+console.log(newArr3)
+
