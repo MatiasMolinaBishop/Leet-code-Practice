@@ -21,10 +21,9 @@ const fetchData = async () => {
 
 fetchData()
 //console.log(answer)
-
 //console.log(fetchData())
 //When we console log answer outside of the async await function it returns an empty arr
-//This is because the console.log is executed befire the function has had time to fetch the data from the API
+//This is because the console.log is executed before the function has had time to fetch the data from the API
 
 // const timeoutIdThree = setTimeout(() => {
 //     console.log('TEST')

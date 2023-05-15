@@ -14,13 +14,15 @@ function anagramCounter(wordsArray) {
         let key = word.split('').sort().join('')
 
         //We create a conditional to check if the sorted word / key exists on the object
-        //Intially object is empty so first condition is met, adding that word as key and the value of 1 as it meas the word at this point only appears once on arr
+        //Intially object is empty so first condition is met, adding that word as key and the value of 1 as it means the word at this point only appears once on arr
         //ex: wordsObject['bac'] would return the value of 'abc' on the object like {'abc':2} => 2
 
         if (!wordsObject[key]) {
+            //Here is there is not such key it will create it with a value of 1
             wordsObject[key] = 1
         } else {
             //if the object already contains a key value pair for the sorted word we are iterarting then we add 1 to that value 
+            //This works because we are assigining a number as the value the keys initially. Therefore we can do mathematical expressions
             wordsObject[key]++
         }
 
@@ -44,7 +46,7 @@ function anagramCounter(wordsArray) {
         //     counter = counter + valuesArr[i]
         // }
 
-        if (valuesArr[i] === 2 || valuesArr[i] > 2) {
+        if (valuesArr[i] >= 2) {
             counter = counter + valuesArr[i]
         }
 
@@ -53,4 +55,4 @@ function anagramCounter(wordsArray) {
     return counter;
 }
 
-console.log(anagramCounter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab']))
+console.log(anagramCounter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab', 'like']))

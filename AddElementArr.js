@@ -19,8 +19,10 @@ let obj = {
 }
 
 console.log(addToArr(arr, obj))
+console.log(arr)
 
 //important to use the spread operator and not push as it is not good practice to mutate the original data.
+//When we use the spread operator the original data is not mutated.
 //Concatenate 2 arrays
 
 const ConcatenateArrays = (arr1, arr2) => {

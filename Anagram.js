@@ -11,7 +11,7 @@ const isAnagram = (test, original) => {
     //console.log([...testUp].join(''))
     return [...testUp].sort().join('') === [...originalUp].sort().join('')
     //Sort sorts elememts of an ARRAY on place. Therefore we use teh spread operator to make this an array and be able to sort it
-    //REMEMEBR - we must join('') the arryas back so that we can compare strungs. Arrays and Objects even tho the values might be the same
+    //REMEMEBR - we must join('') the arryas back so that we can compare strings. Arrays and Objects even tho the values might be the same
     //They would reference a different place in memory and therefore it would always return false
 
 }
@@ -20,3 +20,8 @@ console.log(isAnagram("ahlo", "hola"))
 
 //COMPLETE THIS CHALLANGE TOMORROW TUESDAY
 //https://www.codewars.com/kata/587e18b97a25e865530000d8s
+
+let arrNotSort = ['a', 'g', 'f', 'k', 'm', 'q', 'b', 4, 100, 1, 0, -4]
+letNumNotSort = [1, 4, 6, 8, 19, 40, 100, 4, 1, 20, 11, 21]
+console.log(arrNotSort.sort())
+console.log(letNumNotSort.sort())
