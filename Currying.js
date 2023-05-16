@@ -8,3 +8,5 @@ const multiply = (num1) => {
 }
 
 console.log(multiply(2)(3))
+
+//DO NOT UNDERSTAND

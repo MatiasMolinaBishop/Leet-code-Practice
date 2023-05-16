@@ -24,6 +24,7 @@ const firstNonRep = (str) => {
     }
     console.log(answer)
     return answer
+    //NOT SURE IF THIS WOULD ENTIRELY WORK AS OBJ ARE NOT ORDERED
 }
 //let str = 'hoolh'
 //console.log(firstNonRep(str))
@@ -33,13 +34,15 @@ const uniqueCharacter = (str) => {
     //let unique = false
     for (let i = 0; i < str.length; i++) {
         let answer = false
-        //I want to lpp again to compare each letter to to the next ones on the array
+        //I want to oopp again to compare each letter to to the next ones on the array
         for (let j = i + 1; j < str.length; j++) {
             if (str[i] === str[j]) {
                 answer = false
                 //break
             } else {
                 answer = true
+                //As long as the word letter or number is nt repeated answer = true
+                //If this condition holds throought the entire iteration of the second loop it means that index value is unique so we return it
             }
         }
         if (answer === true) {
@@ -55,17 +58,18 @@ const youtubeAnser = (str, i, j) => {
     //We loop inside a loop to comoprae each character with the remainign characters on the string
     for (i = 0; i < str.length; i++) {
         for (j = 0; j < str.length; j++) {
-            //When i is 0 and j is 0 we use continue to basically sip that loop and not do anything
+            //When i is 0 and j is 0 we use continue to basically sip that loop and not do anything. 
+            //instead we could have started at i + 1 as above
             if (i === j) {
                 continue
             }
-            //If we find a character that is equal to the any of the remaining ones we break ouf of that loop.Therefore we would them start comparing the next character
+            //If we find a character that is equal to any of the remaining ones we break ouf of that loop.Therefore we would start comparing the next character
             //next index with the remaining ones
             if (str[i] === str[j]) {
                 break
             }
         }
-        //after each index xharacter has been looped and comprad for equality if j === str.length it means that the loop was never broken and therefore that character is unique
+        //after each index character has been looped and comprad for equality if j === str.length it means that the loop was never broken and therefore that character is unique
         if (j === str.length)
             return str[i]
     }
@@ -74,3 +78,4 @@ const youtubeAnser = (str, i, j) => {
 
 console.log(youtubeAnser('aabb', 0, 0))
 
+//I PREFARE THE SECOND PPROACH

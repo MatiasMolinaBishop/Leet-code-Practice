@@ -46,3 +46,11 @@ const timer = setInterval(() => {
 
 // While setTimeout() executes the function just once,
 // setInterval() executes the given function repeatedly until the clearInterval() function is called.
+
+//There is a difference between setInterval() & setTimuout()
+
+let timeoutTest = setTimeout(() => {
+    console.log('HALLO')
+}, 3000)
+
+

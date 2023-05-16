@@ -25,3 +25,6 @@ let arrNotSort = ['a', 'g', 'f', 'k', 'm', 'q', 'b', 4, 100, 1, 0, -4]
 letNumNotSort = [1, 4, 6, 8, 19, 40, 100, 4, 1, 20, 11, 21]
 console.log(arrNotSort.sort())
 console.log(letNumNotSort.sort())
+
+
+//revised

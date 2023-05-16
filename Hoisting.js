@@ -25,3 +25,4 @@ function foo() {
 }
 
 //NOTE - const and let dont get hoisted
+//var and funtions are hoisted but let and const arent

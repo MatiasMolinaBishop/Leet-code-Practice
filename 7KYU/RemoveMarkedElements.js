@@ -8,9 +8,9 @@
 
 const removeContained = (mainArr, removeArr) => {
     //I need to iterate through the main arr and check to see if the elements are included on the scond parameter arr
-    //We can use the includes methos
+    //We can use the includes method
     //If the integer is not on the second arr push into a new arr
-    //An integer can be repeated as long as it is not on the arr to be removed
+    //An integer can be repeated as long as it is not on the arr to be removed ex newArr = [2, 2, 4]
     //The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
     let newArr = []

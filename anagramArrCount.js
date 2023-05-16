@@ -56,3 +56,6 @@ function anagramCounter(wordsArray) {
 }
 
 console.log(anagramCounter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab', 'like']))
+
+
+//revised

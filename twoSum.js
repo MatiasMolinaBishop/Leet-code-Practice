@@ -1,4 +1,4 @@
-//Create a function that takes an 2 arguments; (1) an arr of numbers (2) a number
+//Create a function that takes 2 arguments; (1) an arr of numbers (2) a number
 //We want to know if (and the index / numbers) on the arr that add up to the second argument number
 
 //We knwo we will have to iterate trough the arr to check the values
@@ -8,16 +8,26 @@
 
 const twoSum = (arr, num) => {
 
+    let possbleCombos = []
+
     for (let i = 0; i < arr.length; i++) {
         //Like we said we ill have to check each value with all the rest of values so we iterate again all for each one
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] + arr[j] === num) {
-                return (`${arr[i]} + ${arr[j]} add up to ${num}`)
+                possbleCombos.push(`${arr[i]} + ${arr[j]} add up to ${num}`)
+                //return (`${arr[i]} + ${arr[j]} add up to ${num}`)
             }
         }
     }
+
+    if (possbleCombos.length === 0) {
+        return (`No numbers at up to ${num}`)
+    }
+
+
+    return possbleCombos
 }
-console.log(twoSum([1, 2, 3], 3))
+console.log(twoSum([1, 2, 2, 3], 4))
 
 //THERE IS ANOTHER WAY OF SOLVING THIS ALGORITHM MORE EFFICIENTLY
 //VANDALOOP SOUTH PARK

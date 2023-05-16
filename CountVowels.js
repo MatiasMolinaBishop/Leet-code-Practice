@@ -2,6 +2,8 @@ const CountVowels = (str) => {
 
     let count = 0
 
+    //It would be good to lowercase or uppercase the str. That way we can count for all vowels
+
     for (let i = 0; i < str.length; i++) {
         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
             count++
@@ -14,14 +16,14 @@ const CountVowels = (str) => {
 
 console.log(CountVowels('hola como estas?'))
 
-//Same resuly bit more advamced approach
+//Same result bit more advanced approach
 
 const CountVowelsTwo = (str) => {
     let vowels = ['a', 'e', 'i', 'o', 'u']
     let count = 0
 
-    //for of is very similar to forEach but fir strngs. It allows to iterate trough string. 
-    //Here letter represents the each letter and str is the strung which we mutate to all lowercase so that we can check if its inluded on the vowels arr
+    //for of is very similar to forEach but for strngs. It allows to iterate trough string. 
+    //Here letter represents the each letter and str is the string which we mutate to all lowercase so that we can check if its inluded on the vowels arr
 
     for (let letter of str.toLowerCase()) {
         if (vowels.includes(letter)) {
@@ -55,8 +57,23 @@ const CountVowelsThree = (str) => {
         }
         return acc
 
-    }, 0)
+    }, 0)//Initially setting the acc to 0
 
     return `The str tested with reduce has ${answer} vowels`
 }
 console.log(CountVowelsThree('hola como estas?'))
+
+//PRACTICE REDUCE
+
+let test = ['hola', 'hi', 'hallo']
+let reduceCheck = 'Hi how are you?'
+
+let reducer = reduceCheck.toLocaleLowerCase().split(' ').reduce((acc, word) => {
+    if (test.includes(word)) {
+        acc++
+
+    }
+    return acc
+}, 0)
+
+console.log(reducer)

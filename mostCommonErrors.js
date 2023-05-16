@@ -2,10 +2,7 @@
 
 // Error Types
 // When a runtime error occurs JavaScript compiler throws and Error object. The Error object is a special object that contains the stack trace and information about the error.
-
 // The most common Error types in JavaScript are listed below:
-
-
 // ReferenceError: Raised when an invalid reference is used.
 const name = 'Ted';
 console.log(nme);

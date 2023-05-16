@@ -47,5 +47,4 @@ const ContainsDuplicatesEfficient = (arr) => {
 
     return false
 }
-
 console.log(ContainsDuplicatesEfficient([2, 4, 6, 7, 9, 5, 1, 4]))

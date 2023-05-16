@@ -31,3 +31,5 @@ const ConcatenateArrays = (arr1, arr2) => {
 }
 
 console.log(ConcatenateArrays([1, 2, 3], [4, 5, 6]))
+
+//revised
