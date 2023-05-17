@@ -55,3 +55,5 @@ const sortByLastName = (arr) => {
 }
 
 console.log(sortByLastName(book))
+
+//THIS IS A BIT DIFFERENT FROMM IRONHACK BUT IT WORKS. ? TERNARY OPERATOR

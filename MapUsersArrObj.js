@@ -99,5 +99,4 @@ const getNames = (arr) => {
 
     return newArr
 }
-
 console.log(getNames(students))

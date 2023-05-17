@@ -85,7 +85,6 @@ const topStudents = () => {
 
 
 //FILTER BY A SPCIFIC NAME
-
 const filterName = (userName, arr) => {
     const searchedUser = arr.filter((element) => {
         return element.name === userName

@@ -42,7 +42,7 @@ let maxEntry = ''
 let maxValue = 0
 
 //commonStrings={hi:2, bye:3...}
-//fot in - is a method for objects. The property (name it whatever) hold the key for wach of the elements as we iterate through them
+//for in - is a method for objects. The property (name it whatever) hold the key for each of the elements as we iterate through them
 //commonStrngs is the object which we iterate through
 
 
@@ -62,7 +62,7 @@ console.log(`The string that repeats the most is ${maxEntry} and it exists ${max
 
 //const object = { a: 1, b: 2, c: 3 };
 //for (const property in object) {
-  //console.log(`${property}: ${object[property]}`);
+//console.log(`${property}: ${object[property]}`);
 //}
 
 // Expected output:s
@@ -71,3 +71,43 @@ console.log(`The string that repeats the most is ${maxEntry} and it exists ${max
 // "c: 3"
 
 //The for in method is used to iterate through objects. As seen above we can then conditnolly arrange this data to get whatver results we want
+
+
+let list = ['python', 'NodeJS', 'javaScript', 'javaScript', 'MongoDB', 'Express', 'javaScript']
+
+let countMost = (List) => {
+
+    //I want to count how many times wach index value is repeated. If any.. and then return the value that repeats itself the most
+
+    let objeto = {}
+
+    for (let i = 0; i < list.length; i++) {
+
+        if (objeto[list[i]] === undefined) {
+            objeto[list[i]] = 1
+        } else {
+            objeto[list[i]]++
+        }
+    }
+
+    console.log(Object.keys(objeto))
+    console.log(Object.values(objeto))
+
+    let keyMax = ''
+    let max = 0
+
+    for (key in objeto) {
+        if (objeto[key] > max) {
+            max = objeto[key]
+            keyMax = key
+        }
+    }
+
+
+    return `The language ${keyMax} appears the max with a tota of ${max} times mentioned`
+
+}
+
+console.log(countMost(list))
+
+

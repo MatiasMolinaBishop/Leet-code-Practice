@@ -18,7 +18,6 @@ const reverseWords = (str) => {
     return str.split('').reverse().join('')
 
 }
-
 console.log(reverseWords('Hi my name is Matias'))
 
 //Depending on what they want as an output try the above solutions 
