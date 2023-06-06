@@ -93,3 +93,25 @@ for (let i = 0; i < jonasArray.length; i++) {
 
 console.log(newArr3)
 
+
+//PRACTICE
+
+
+
+let testArr = [100, 200, 300, 400, 500]
+
+const arrPractice = (arr) => {
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] === 200) {
+            console.log(arr[i])
+            break
+        }
+        console.log(arr[i])
+
+    }
+
+}
+
+console.log(arrPractice(testArr))
+

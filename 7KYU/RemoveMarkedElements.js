@@ -25,4 +25,48 @@ const removeContained = (mainArr, removeArr) => {
 
 }
 
-console.log(removeContained([1, 1, 2, 3, 1, 2, 3, 4], [1, 3]))
+//console.log(removeContained([1, 1, 2, 3, 1, 2, 3, 4], [1, 3]))
+
+
+const onOwn = (arr1, arr2) => {
+
+    //I could loop inside the loop to compare each element on the first arry with those of the second
+    //i woudl create a new empty arr into whihch i woudl push only numbers that are not repeated
+
+    let newArr = []
+
+    for (let i = 0; i < arr1.length; i++) {
+        let count = 0
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                break
+            }
+            count++
+        }
+        if (count === arr2.length) {
+            newArr.push(arr1[i])
+        }
+    }
+    return newArr
+}
+
+console.log(onOwn([1, 1, 2, 3, 1, 2, 3, 4], [1, 3]))
+
+
+const includesMethod = (arr1, arr2) => {
+
+    let newArr = []
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr2.includes(arr1[i])) {
+            console.log(`${arr1[i]} to be removed`)
+        } else {
+            newArr.push(arr1[i])
+        }
+    }
+
+    return newArr
+
+}
+
+console.log(includesMethod([1, 1, 2, 3, 1, 2, 3, 4], [1, 3]))

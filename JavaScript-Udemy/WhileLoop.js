@@ -32,3 +32,5 @@ while (dice !== 6) {
 }
 
 //WE DO NOT KNOW BEFORE HAND HOW MANY ITERATIONS WE WILL NEED. THIS IS WHEN WE WOULD USE A WHILE LOOP
+
+//While basically there is a coditin we specify and the block of code that follows will excute in a loop until that condition is no longer true

@@ -22,3 +22,12 @@ function removeDuplicateWords(string) {
     const uniqueWords = Array.from(new Set(words));
     return uniqueWords.join(' ');
 }
+
+
+//Remove all duplicates on a str
+//We need to split the words on the str into an arr so that i can create a set (includes only unqiye values)
+//new Set(words)
+//Once we have the set get an array from the set values Array.from(new Set(words))
+//Once we have the array of unique words we join them .join(' ')
+
+

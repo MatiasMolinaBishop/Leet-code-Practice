@@ -17,6 +17,8 @@ const firstNonRep = (str) => {
     console.log(obj)
     let answer
 
+    //THIS IS A WA Y OF ITERATING THROUGH OBJECTS
+
     for (const key in obj) {
         if (obj[key] === 1) {
             answer = key
@@ -27,9 +29,11 @@ const firstNonRep = (str) => {
     }
 
     //ALLBELOW HERE IS PRATICE WITHIN THIS FUNCTION
+    //This returns an array of all values on the object
 
-    console.log(Object.values(obj))
-    console.log(Object.values(obj).length)
+
+    // console.log(Object.values(obj))
+    // console.log(Object.values(obj).length)
 
     let allUniqueCheck = Object.values(obj).reduce((acc, currentValue) => {
         return acc + currentValue
@@ -80,8 +84,8 @@ const youtubeAnser = (str, i, j) => {
     //We loop inside a loop to comoprae each character with the remainign characters on the string
     for (i = 0; i < str.length; i++) {
         for (j = 0; j < str.length; j++) {
-            //When i is 0 and j is 0 we use continue to basically sip that loop and not do anything. 
-            //instead we could have started at i + 1 as above
+            //When i is 0 and j is 0 we use continue to basically skip that loop and not do anything. 
+            //This takes care of us thiking that it is being repeated when compared to itself
             if (i === j) {
                 continue
             }
@@ -98,13 +102,13 @@ const youtubeAnser = (str, i, j) => {
     return null
 }
 
-console.log(youtubeAnser('aabb', 0, 0))
+//console.log(youtubeAnser('aabb', 0, 0))
 
 //I PREFARE THE SECOND PPROACH
 
-console.log('TEST / PTACTICE')
+//console.log('TEST / PTACTICE')
 
-console.log(firstNonRep('hola'))
+//console.log(firstNonRep('hola'))
 
 //TESTING 2ND SOLUTION ON MY OWN DOES NOT WORK!!!!
 
@@ -150,6 +154,51 @@ const loopLopp = (str) => {
     return answer
 }
 //hollaaah
-console.log('NEW TEST')
+//console.log('NEW TEST')
 
-console.log(loopLopp('xfxfgxhhooylaa'))
+//console.log(loopLopp('xfxfgxhhooylaa'))
+
+
+//I want compare each leter in the string to the ramining ones
+//I need to loop inside the loop
+//I must set a cindition that lets me know when a letter appears again on the str
+//If a letter loops arounf the inned loop and it never finds another letter like it it means it is unique
+//We will handle this by breaking over the loop when an equal is found
+
+const nonRep = (str, i, j) => {
+
+    for (i = 0; i < str.length; i++) {
+
+        for (j = 0; j < str.length; j++) {
+            if (i === j) {
+                continue
+            }
+            if (str[i] === str[j]) {
+                break
+            }
+        }
+
+        if (j === str.length) {
+            return `${str[i]} is the first non repeated character`
+        }
+    }
+
+    return console.log('ALL ARE UNIQUE')
+
+}
+
+console.log(nonRep('hholalxoa', 0, 0))
+
+let testTest = ['mongo', 'mongo', 'linux', 'java', 'mongo']
+let count = 0
+
+for (let i = 0; i < testTest.length; i++) {
+
+    if (testTest[i] === 'mongo') {
+        count++
+    }
+
+    console.log(count)
+}
+
+console.log(count)

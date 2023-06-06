@@ -4,10 +4,10 @@ const jonas = {
     birthYear: 1992,
     job: "Fullstack Developer",
     friends: ['Tomas', 'Laura', 'Monica'],
-    hasDriversLicense: false,
+    hasDriversLicense: true,
     //Calculate age function within the object
     calcAge: function () {
-        console.log(this)
+        //console.log(this)
 
         return new Date().getFullYear() - this.birthYear
     },
@@ -40,12 +40,20 @@ const jonas = {
     //USING THE TERNARY OPERATOR ?
     summaryTwo: function () {
         return `I repeat ${jonas.hasDriversLicense ? 'does' : 'doesNOT'}`
+    },
+
+    //Using ternary again
+    summaryThree: () => {
+
+        return `Suspect is ${jonas.calcAge()} and ${jonas.hasDriversLicens ? 'HE WAS DRIVING' : 'HE WAS WALKING'} `
     }
 }
 
-console.log(jonas.calcAge())
-console.log(jonas.summary())
-console.log(jonas.summaryTwo())
+// console.log(jonas.calcAge())
+// console.log(jonas.summary())
+// console.log(jonas.summaryTwo())
+console.log(jonas.summaryThree())
+
 
 //When we is the "this" keyword in objects we are refring to that object. 
 //Therefore we can access its key / values as we do on the calcAge function

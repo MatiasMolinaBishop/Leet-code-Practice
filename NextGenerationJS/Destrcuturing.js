@@ -14,8 +14,25 @@ let person = {
     sex: 'Male'
 }
 
-//Because objects are unorderes you cannot arbitreraly assign a name. You must use the key value pairs from the object you are destructuring
+//Because objects are unordered you cannot arbitreraly assign a name. You must use the key value pairs from the object you are destructuring
 //Note that we can detructure the entire object or just as many key value pairs as we'd like
 const { nameUser, age } = person
 
 console.log(age) // 30
+
+//PRACTICE
+
+let salary = [22400, 36200, 19800, 26300]
+const [companyOne, companyTwo, companyThree, companyFouf] = salary
+
+console.log(companyOne)
+
+let user = {
+    name: 'Matias',
+    email: 'molibi01@gmail.com',
+    password: 'Test123!'
+}
+
+requestBody = { name, email, password } = user
+
+console.log(password)
