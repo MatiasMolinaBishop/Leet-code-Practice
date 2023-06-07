@@ -21,3 +21,4 @@ const name = 'Bob';
 name.toFixed();
 // Uncaught TypeError: name.toFixed is not a function
 console.log('test')
+//ok

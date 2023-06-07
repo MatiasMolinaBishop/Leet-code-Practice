@@ -9,6 +9,7 @@ const isAnagram = (test, original) => {
     let testUp = test.toUpperCase()
     let originalUp = original.toUpperCase()
     //console.log([...testUp].join(''))
+    //sort methof only works for arr thats why we spread the str so that we can apply the sort() methiod on it
     return [...testUp].sort().join('') === [...originalUp].sort().join('')
     //Sort sorts elememts of an ARRAY on place. Therefore we use teh spread operator to make this an array and be able to sort it
     //REMEMEBR - we must join('') the arryas back so that we can compare strings. Arrays and Objects even tho the values might be the same

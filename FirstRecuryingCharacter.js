@@ -37,3 +37,7 @@ console.log(obj2)
 console.log(obj2[4])
 obj2[4] = 4
 console.log(obj2)
+
+//It nice to keep in mind in this case if they ask for the FIRST thing thats repeating
+//as we create this {} empty object if we come to the condition in whoich obj[arr[i]] !== undefined basicallly
+//It means that i is repeated so RETURN THAT THANG

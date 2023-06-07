@@ -32,7 +32,7 @@ const countVowels = (str) => {
 
 console.log(countVowels('holA'))
 
-//Question 3:
+//Question 3
 //Write a function in JavaScript that takes in an array of strings and returns the longest string in the array. If there are multiple strings with the same length, return the first occurrence. For example, if the input array is ["apple", "banana", "orange"], the function should return "banana".
 
 const longest = (arr) => {

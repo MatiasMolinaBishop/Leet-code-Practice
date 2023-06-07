@@ -35,4 +35,4 @@ const checkAfterTime = setTimeout(() => {
 }, 5000);
 
 //Keep inmind we whenever we fetch data we must be aware of working with promises. 
-//We must run the code asyncronously as it takes time to send a request and get a response 
+//We must run the code asyncronously as it takes time to send a request and get a response OK

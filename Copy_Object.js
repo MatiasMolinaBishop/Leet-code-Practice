@@ -67,3 +67,17 @@ console.log(test1)
 console.log(test2)
 
 //NO NOR REALLY SPREAD OPERATOR WORKS PERFECTLY
+
+//If were to copy an object I would use the spread operator
+
+let objTest = {
+    city: 'valencia',
+    State: 'Carabobo'
+}
+
+let objTestCopy = { ...objTest }
+
+console.log(objTest)
+console.log(objTestCopy)
+
+console.log(objTest === objTestCopy)

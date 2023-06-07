@@ -100,3 +100,8 @@ const getNames = (arr) => {
     return newArr
 }
 console.log(getNames(students))
+
+//COOL PROBLEM
+
+//[Hola, Chao]
+// H === h.toLowerCase() if its equal we push it changing it or the other way around. That doesnt matter we figure out the logic

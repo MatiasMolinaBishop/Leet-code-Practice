@@ -28,3 +28,5 @@ numbers.sort((a, b) => b - a);
 
 console.log(numbers);
 // [ 223, 112, 99, 68, 64, 23, 22, 18, 9, 1, 0 ]
+
+//OK

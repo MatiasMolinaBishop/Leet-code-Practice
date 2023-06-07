@@ -77,3 +77,18 @@ let reducer = reduceCheck.toLocaleLowerCase().split(' ').reduce((acc, word) => {
 }, 0)
 
 console.log(reducer)
+
+//PRACTICE REDUCER
+//Give average of 5 point reviews for whatver
+
+const stars = (arr) => {
+
+    const reducer = arr.reduce((acc, review) => {
+        return (acc + review) / arr.length
+
+    }, 0)
+
+    return reducer
+}
+
+console.log(stars([4, 3, 5, 5, 5, 5, 1, 5, 5, 5]))

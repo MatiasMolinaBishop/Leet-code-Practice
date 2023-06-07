@@ -32,7 +32,7 @@ const ContainsDuplicates = (arr) => {
     return false
 }
 
-console.log(ContainsDuplicates([2, 4, 6, 7, 9, 5, 1, 4]))
+//console.log(ContainsDuplicates([2, 4, 6, 7, 9, 5, 1, 4]))
 
 //ANOTHERWAY OF CREATING THIS FUNCTION
 
@@ -47,4 +47,40 @@ const ContainsDuplicatesEfficient = (arr) => {
 
     return false
 }
-console.log(ContainsDuplicatesEfficient([2, 4, 6, 7, 9, 5, 1, 4]))
+//console.log(ContainsDuplicatesEfficient([2, 4, 6, 7, 9, 5, 1, 4]))
+
+//PRACTICE WRITE A FUNCTION THAT TAKES AN ARR AS ARGUEMENTS AND CHECKS IF THERE IS A DUPLICATE
+
+const checkRepeated = (arr) => {
+    //loop through my arr and check each word with the rest to see if the are equal
+    //I will keep track ofthe arr indexes initializing them to a value of 1. As I am looping if index repeats increase that count ++
+    //get arr of value if any is greater them 1 it means an element is repeating sop return true
+    let obj = {}
+
+    for (let i = 0; i < arr.length; i++) {
+        if (obj[arr[i]] === undefined) {
+            obj[arr[i]] = 1
+        } else {
+            obj[arr[i]]++
+        }
+    }
+
+    console.log(obj)
+
+    let keyValues = Object.values(obj)
+    //console.log(keyValues)
+
+    for (let i = 0; i < keyValues.length; i++) {
+        if (keyValues[i] >= 2) {
+            return true
+        }
+    }
+
+
+
+
+    return false
+
+}
+
+console.log(checkRepeated(['hello', 3, 1, 5, 'helloNO']))

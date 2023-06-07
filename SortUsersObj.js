@@ -68,6 +68,7 @@ const topStudents = () => {
     //This gives me an arr of the students who passed the class. Not really necessary but asked for 
     const notFail = students.filter((student) => {
         if (student.finalExam >= 70) {
+            //actually I should have used some math here but before hand as ghow much percentage each grade accounts for towards final grade
             return student
         }
     })

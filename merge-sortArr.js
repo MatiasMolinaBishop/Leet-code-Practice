@@ -32,3 +32,4 @@ mergeSort([], [654, 20, -1])
 
 
 
+//sort is a built in javascript method for arrays

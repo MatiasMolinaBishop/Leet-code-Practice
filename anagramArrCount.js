@@ -18,7 +18,7 @@ function anagramCounter(wordsArray) {
         //ex: wordsObject['bac'] would return the value of 'abc' on the object like {'abc':2} => 2
 
         if (!wordsObject[key]) {
-            //Here is there is not such key it will create it with a value of 1
+            //Here if there is not such key it will create it with a value of 1
             wordsObject[key] = 1
         } else {
             //if the object already contains a key value pair for the sorted word we are iterarting then we add 1 to that value 
@@ -59,3 +59,5 @@ console.log(anagramCounter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab', '
 
 
 //revised
+
+//PRACTICE

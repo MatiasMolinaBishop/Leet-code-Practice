@@ -18,7 +18,7 @@ const ofDrinkingAge = people.filter((person) => {
 
 
 
-console.log(ofDrinkingAge);
+//console.log(ofDrinkingAge);
 // [
 //   { name: 'Candice', age: 25 },
 //   { name: 'Tammy', age: 30 },
@@ -34,5 +34,19 @@ let odd = numbers.filter((number) => {
     return number % 2 !== 0 && number > 42
 })
 
-console.log(odd);
+//console.log(odd);
 // [ 123, 99, 73, 45 ]
+
+const numberCheck = (arr) => {
+
+    const filtered = arr.filter((number) => {
+
+        return number % 2 !== 0 && number > 42
+
+    })
+
+    return filtered
+
+}
+
+console.log(numberCheck([1, 60, 112, 123, 100, 99, 73, 45]))

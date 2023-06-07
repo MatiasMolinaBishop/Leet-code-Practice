@@ -20,7 +20,7 @@ const removeDuplicate = (arr) => {
     return Object.keys(obj)
 }
 
-//console.log(removeDuplicate([2, 3, 4, 5, 78, 4, 3, 3, 'hola', 'hi', 'hi']))
+console.log(removeDuplicate([2, 3, 4, 5, 78, 4, 3, 3, 'hola', 'hi', 'hi']))
 
 //Question? does .length works on objects?
 
@@ -30,6 +30,6 @@ let flight = {
     status: 'on-time'
 }
 
-console.log(flight)
-console.log(flight.length) //NO
-console.log(Object.keys(flight).length) //THIS WOULD WORK
+//console.log(flight)
+//console.log(flight.length) //NO
+//console.log(Object.keys(flight).length) //THIS WOULD WORK

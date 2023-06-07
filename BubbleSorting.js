@@ -21,3 +21,5 @@ function bubbleSort(arr) {
 // Example usage:
 var array = [5, 3, 8, 2, 1, 4];
 console.log(bubbleSort(array)); // Output: [1, 2, 3, 4, 5, 8]
+
+//NOT NOW

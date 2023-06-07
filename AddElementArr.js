@@ -33,3 +33,5 @@ const ConcatenateArrays = (arr1, arr2) => {
 console.log(ConcatenateArrays([1, 2, 3], [4, 5, 6]))
 
 //revised
+
+//SPREAD OPERATOR CREAES A NEW ARR POINTING TO A DIFFERENT SPOT IN MEMORY
